@@ -1,0 +1,4 @@
+> 	yacc -d infix.y
+> 	lex infix.l
+> 	gcc y.tab.c -lfl -ly
+> 	./a.out

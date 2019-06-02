@@ -1,0 +1,12 @@
+This is a test 123 + 123 = 246
+*
+/
+.
+
+if(2==2)
+	true
+
+while(1)
+{
+	printf("hello");
+}

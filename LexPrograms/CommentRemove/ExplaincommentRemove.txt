@@ -1,0 +1,25 @@
+
+/% Lex Program to remove comments from C program  
+   and save it in a file %/ 
+/*Definition Section*/ 
+%{ 
+%}
+  
+/*Rule Section*/ 
+%% 
+  
+ /*Regular expression for single line comment*/ 
+\/\/(.*) {};                     
+ /*Regular expression for multi line comment*/ 
+\/\*(.*\n)*.*\*\/  {};     
+          
+%% 
+  
+/*Driver function*/ 
+int main() 
+{ 
+yyout=fopen("out.c","w"); 
+yylex(); 
+return 0; 
+} 
+
